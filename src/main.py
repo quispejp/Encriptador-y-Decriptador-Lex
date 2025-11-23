@@ -81,7 +81,9 @@ def main(page: ft.Page):
     file_picker_abrir = ft.FilePicker(on_result=archivo_seleccionado)
     page.overlay.append(file_picker_abrir)
 
-    def btn_seleccionar_click(e):
+    def btn_seleccionar_click(e):  
+        txt_encriptado_text.value = ""
+        txt_desencriptado_text.value = ""      
         file_picker_abrir.pick_files(
             allow_multiple=False,
             allowed_extensions=["txt"]
@@ -115,8 +117,8 @@ def main(page: ft.Page):
             page.update()
 
     def btn_desencriptar_click(e):
-        if txt_encriptado_text.value.strip():
-            txt_desencriptado_text.value = desencriptar(txt_encriptado_text.value)
+        if txt_input_field.value.strip():
+            txt_desencriptado_text.value = desencriptar(txt_input_field.value)
             page.update()
 
     # =====================================================
@@ -171,7 +173,7 @@ def main(page: ft.Page):
                                 Text("Texto Encriptado", weight="bold", color=Colors.BLACK),
                                 txt_encriptado,
                                 ElevatedButton(
-                                    "Guardar",
+                                    "Guardar Encriptado",
                                     bgcolor=Colors.BLUE_GREY_300,
                                     color=Colors.BLACK,
                                     on_click=guardar_encriptado
@@ -182,7 +184,7 @@ def main(page: ft.Page):
                                 Text("Texto Desencriptado", weight="bold", color=Colors.BLACK),
                                 txt_desencriptado,
                                 ElevatedButton(
-                                    "Guardar",
+                                    "Guardar Desencriptado",
                                     bgcolor=Colors.BLUE_GREY_300,
                                     color=Colors.BLACK,
                                     on_click=guardar_desencriptado
