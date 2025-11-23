@@ -63,7 +63,7 @@ def guardar_archivo(nombre_archivo:str, contenido:str) ->str:
         f.write(contenido)
 
 lexer = lex.lex()
-
+'''
 # Leemos el archivo Original sin encriptar y lo mostramos
 print("---------Texto Original---------")
 archivo_original = "texto.txt"
@@ -87,3 +87,5 @@ guardar_archivo(archivo_desencriptado, desencriptar(texto_encriptado))
 print("---------Texto Desencriptado---------")
 texto_desencriptado = leerArchivo(archivo_desencriptado)
 print(f"{texto_desencriptado}")
+
+'''
