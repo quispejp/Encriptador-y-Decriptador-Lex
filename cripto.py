@@ -72,10 +72,10 @@ ENC_MAP = {
     '9': '#0*q',
     #-Numeros-
 
-    # Espacio y tab
+    # Espacio , tab y salto de linea
     ' ': '__s!',
     '\t': 't_b@',
-
+    '\n': 'Ln#4',
     # Símbolos
     '¿': 'odJF',
     '?': 'Crn*',
