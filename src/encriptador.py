@@ -1,3 +1,12 @@
+''''
+Miembros:
+- Mijael Albis Lijeron
+- Fatima Fuentes Flores
+- Rebeca Justiniano Saravia
+- Juan Pablo Quispe Cairo
+'''
+
+
 import ply.lex as lex
 from cripto import ENC_MAP, DEC_MAP
 tokens = (

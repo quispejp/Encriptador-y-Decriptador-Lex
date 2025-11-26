@@ -1,3 +1,12 @@
+''''
+Miembros:
+- Mijael Albis Lijeron
+- Fatima Fuentes Flores
+- Rebeca Justiniano Saravia
+- Juan Pablo Quispe Cairo
+'''
+
+
 import flet as ft
 from flet import Page, Text, TextField, Column, Row, ElevatedButton, Container, Colors, padding, border
 from encriptador import encriptar, desencriptar

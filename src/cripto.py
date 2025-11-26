@@ -1,3 +1,12 @@
+''''
+Miembros:
+- Mijael Albis Lijeron
+- Fatima Fuentes Flores
+- Rebeca Justiniano Saravia
+- Juan Pablo Quispe Cairo
+'''
+
+
 ENC_MAP = {
     #Minusculas
     'a':	'Q1fz',
